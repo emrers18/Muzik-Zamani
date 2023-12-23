@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="anasayfa-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h2><i class="fa-solid fa-music" style="color: whitesmoke"></i> Music Time - Home Page</h2>
+        <a href="anasayfa-ingilizce.html">Home Page</a>
+        <a href="rockmusic-inglizce.html">Rock Music</a>
+        <a href="rapmusic-ingilizce.html">Rap Music</a>
+        <a href="popmusic-ingilizce.html">Pop Music</a>
+        <a href="hakkımda-ingilizce.html">About Me</a>
+        <a href="anasayfa.html">TR/EN</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to the Colourful World of Music</h1>
+        <p>Surprises Waiting for You Between Rock, Rap and Pop</p>
+    </header>
+
+    <video class="arkaplan" autoplay loop muted  src="./videolar/siames-the-wolf-official-animated-music-video.mp4" ></video>
+    <audio src="./sesler/müzik.mp3" autoplay></audio>
+
+    <p class="yanipsonenyazi"><i class="fa-regular fa-circle-down"></i> To Sign Up</p> 
+
+    <section id="İletişim">
+        <div class="section_title">
+           
+            
+            <br>
+            <br>
+            <div class="inner_contact">
+                <div class="child_contact">
+                    <form id="myForm" action="#">
+                        <input type="text" name="Fullname" id="fullname" placeholder="Name">
+                        <input type="email" name="Email" id="email" placeholder="E-mail">
+                        <input type="text" name="Phone" id="phone" placeholder="Telephone">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input type="button" value="Submit" onclick="submitForm()">
+                        <div  id="welcomeMessage"></div>
+                    </form>
+                    
+                    
+                    
+                    <script>
+                        function submitForm() {                          
+                            var fullname = document.getElementById('fullname').value;                   
+                            var welcomeMessage = "Welcome, " + fullname + "!";
+                            document.getElementById('welcomeMessage').innerHTML = welcomeMessage;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Music World   <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-square-facebook"></i></p>
+    </footer>
+        
+    
+</body>
+</html>

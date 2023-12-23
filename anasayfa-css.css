@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-position-y: top;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #6a6565;
+}
+
+.navbar{
+    height: 8vh;
+    width: 100%;
+    background-color: #6a6565;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.arkaplan {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size:contain;
+  }
+  
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size:medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover{
+    color: #ff004c;
+}
+h2:hover{
+    color: #ff004c;
+}
+
+.yanipsonenyazi {
+    animation: blinker 2.0s linear infinite; 
+    color: #ff0000; 
+    font-size: 80px; 
+    font-weight: bold; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 200px;
+
+}
+@keyframes blinker {  
+    50% { opacity: 0; }
+    }
+
+#welcomeMessage {        
+    color: white;
+    text-align: center;
+
+}
+
+/*İLETŞİM*/
+
+.inner_contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+.child_contact{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom:50px;
+}
+.child_contact form{
+    padding: 50px 40px;
+    background: #5f6368;
+    border-radius: 5px;
+}
+.child_contact form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px ;
+    background: #24292D;
+    border: none;
+    resize: none; 
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+
+.child_contact form input,textarea:focus{
+    color: #ffff;
+
+}
+.child_contact form input:focus{
+    letter-spacing: 1px;
+}
+.child_contact form textarea:focus{
+    letter-spacing: 1px;
+}
+.child_contact form input:last-child{
+    margin-bottom: 0;
+    background: #ff004c;
+    border: 1px solid #ff004c;
+    transition: .3s;
+}
+.child_contact form input:last-child:hover{
+    background: transparent;
+    color: #ffff;
+}
+
+
+.section_title{
+    margin-top: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*ROCK MUSİC*/
+
+.parent_contact{
+    background-color: #5f6368;
+    margin:200px 400px;
+}
